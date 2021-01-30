@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#605C5C">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/albumImageViewItem"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/titleTextViewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/material_on_background_emphasis_high_type"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/albumImageViewItem"
+            android:layout_marginStart="7dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/descriptionTextViewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/material_on_background_emphasis_medium"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/albumImageViewItem"
+            android:layout_below="@+id/titleTextViewItem"
+            android:layout_marginStart="7dp">
+        </TextView>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
